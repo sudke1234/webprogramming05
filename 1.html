@@ -18,11 +18,38 @@
             <li>여성<input type="radio"><br></li>
             <li>남성<input type="radio"><br></li>
             <form action="2.html">
-            아이디 : <input type="text"><br>
-            비밀번호 : <input type="password"><br><hr>
-            <input type="submit" value="로그인">
+             <input type="submit" value="로그인">
         </form>
         </ul>
     </fieldset>
+    <form action="" method="post" name="form1">
+        아이디 : <input type="text" required><br>
+        비밀번호 : <input type="password" required><br><hr>
+        <input type="submit" value="제출" name="frorm1"><br><hr>
+        <input type="color" ><br>
+        키 입력 : <input type="number" min="140" max="200" step="10"><br>
+        호감도 : <input type="range" min="140" max="200" value="10"><br>
+        호감도 : <input type="reset" value="reset"><br>
+    </form>
+
+    <div class="dd">
+        <form action="">
+            <select name="cars">
+                <option value="dd">빨강</option>
+                <option value="fdd">노랑</option>
+                <option value="ㅇ">주황</option>
+                <option value="ㅇ">하양</option>
+            <input type="text">
+            <br><input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="크롬"></option>
+                <option value="크롬"></option>
+                <option value="크롬"></option>
+                <option value="크롬"></option>
+                <option value="크롬"></option>
+            </datalist>
+        </form>
+    </div>
+    
 </body>
 </html>
