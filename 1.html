@@ -4,65 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="1.html" href="1.css">
-    <title>설문조사 사이트</title>
+    <title>Document</title>
 </head>
+<style>
+    *{
+        margin: 10px;
+        
+    }
+    p{
+        background-color: aquamarine;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace
+    }
+    h1,h2{
+        color: brown;
+    }
+    #special{
+        color: red;
+        background-color: black;
+    }
+    .group{
+        border: solid 5px blue;
+        background-color: violet;
+        text-align: center;
+    }
+    a:link{
+        color: red;
+    }
+    a:visited{
+        color: blue;
+    }
+    p:hover{ color: red; background-color: black;}
+</style>
 <body>
-
-    <h1 style="font-family: 'Courier New', Courier, monospace;">회원가입</h1>
-    <fieldset style="width: 400px; height: 500;background-color: aquamarine;"style="">
-        <legend style="font-family: 'Courier New', Courier, monospace; ">
-            회원가입
-        </legend>
-             <ul>성별
-            <li>여성<input type="radio"><br></li>
-            <li>남성<input type="radio"><br></li>
-            <form action="2.html">
-             <input type="submit" value="로그인">
-        </form>
-        </ul>
-    </fieldset>
-    <form action="" method="post" name="form1">
-        아이디 : <input type="text" required><br>
-        비밀번호 : <input type="password" required><br><hr>
-        <input type="submit" value="제출" name="frorm1"><br><hr>
-        <input type="color" ><br>
-        키 입력 : <input type="number" min="140" max="200" step="10"><br>
-        호감도 : <input type="range" min="140" max="200" value="10"><br>
-        호감도 : <input type="reset" value="reset"><br>
-    </form>
-
-    <div class="dd">
-        <form action="">
-            <select name="cars">
-                <option value="dd">빨강</option>
-                <option value="fdd">노랑</option>
-                <option value="ㅇ">주황</option>
-                <option value="ㅇ">하양</option>
-            <input type="text">
-            <br><input list="browsers" name="browser">
-            <datalist id="browsers">
-                <option value="크롬"></option>
-                <option value="크롬"></option>
-                <option value="크롬"></option>
-                <option value="크롬"></option>
-                <option value="크롬"></option>
-            </datalist>
-        </form>
+    <div>
+        <p>이것은 paragraph입니다.1</p>
+        <p>이것은 paragraph입니다.2</p>
+        <p>이것은 paragraph입니다.3</p>
+        <p>이것은 paragraph입니다.4</p>
+        <p>이것은 paragraph입니다.5</p>
+        <p>이것은 paragraph입니다.6</p>
     </div>
-    <details>
-        <summary>클릭 전 볼 수 있는 영역</summary>
-        <span>클릭 후에만 표시되는 영역</span>
-    </details>
-    <label for="movie"></label>
-    <input type="text" list="movie">
-    <datalist id="movie">
-        <option value="djdd">dd</option>
-        <option value="dd">dd</option>
-        <option value="dddd">dd</option>
-        <option value="dddddd">dd</option>
-    </datalist>
-    <input type="file" ><br>
-     
+    <div>
+        <h1>웹 프로그래밍</h1>
+        <h2>JAVASCRIPT</h2>
+        <p class="group">html 학습하기</p>
+        <p id="special">CSS 학습하기</p>
+        <p>JAVASCRIPT 학습하기</p>
+        <a href="https://www.w3c.org">참고 사이트 W3C</a>
+    </div>
+    <div>
+        <h1>이것은<em>중요한</em>기사입니다.</h1>
+    </div>
 </body>
 </html>
