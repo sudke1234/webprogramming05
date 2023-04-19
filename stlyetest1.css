@@ -1,0 +1,15 @@
+.item1{color: brown;}
+.item2{color:blue}
+.item3:hover{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fonttest1{
+    letter-spacing: 5ch;
+    font-size: large;
+    text-decoration-color: brown;
+    line-height: 5ch;
+    text-shadow: 5ch;
+    text-transform: capitalize;
+    text-transform: lowercase;
+}
