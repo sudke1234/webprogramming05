@@ -7,36 +7,43 @@
     <title>Document</title>
 </head>
 <style>
+    a:link{color: red;}
+    a:hover{color: blue;}
+    a:visited{color: green;}
+    a:active{color: yellow;}
+
+    p,em{
+        border: dotted 3px  red;
+    }
+    body{
+        background-image: url(OIP\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto;
+        margin: 0px;
+        padding: 0px;
+    }
     p{
-        border: 2px solid 4;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(114, 231, 231);
+        border: 1px solid red;
     }
-    p.thick{
-        border-color: green;
-        border-width: thick;
-        border-style: solid;
-        border-radius: 20;
-        .m
-    }
-    p.medium{
-        border-color: red;
-        border-width: th;
-        border-style: solid;
-    }
-    div{
-        border:30px solid yellow;
-        width: 300;
-        height: px;
-        border-image: url(border.png) 30 30 round;
+    #target{
+        margin: 30px;
+        width: 200px;
+        padding: 15px;
+        background-color: rgb(206, 153, 153);
+        border: 5px solid red;
+        text-align: center;
     }
 </style>
 <body>
-    <p style="border-style: dotted;" class="thick">dotted</p>
-    <p style="border-style: dashed;"class="thick">none</p>
-    <p style="border-style: none;"class="thick"></p>
-    <p style="border-style: none;">none</p>
-    <p style="border-style: none;">none</p>
-    <p style="border-style: none;">none</p>
-
+   <p>margin: 0px; padding: 0px;여백이 0인 단락입니다.</p>
+   <p id="target">여백이 있는 단락입니다.</p>
+   <p style="text-align: center;">
+    <em>Text</em>
+    </p>
+    <a href="3.html" target="_blank">눌러</a>
 </body>
-<border.gh\l
 </html>
