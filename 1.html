@@ -7,43 +7,48 @@
     <title>Document</title>
 </head>
 <style>
-    a:link{color: red;}
-    a:hover{color: blue;}
-    a:visited{color: green;}
-    a:active{color: yellow;}
-
-    p,em{
-        border: dotted 3px  red;
+    table{
+        border-collapse: collapse;
+        
+        
     }
-    body{
-        background-image: url(OIP\ \(1\).jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: auto;
-        margin: 0px;
-        padding: 0px;
-    }
-    p{
-        margin: 0px;
-        padding: 0px;
-        background-color: rgb(114, 231, 231);
-        border: 1px solid red;
-    }
-    #target{
-        margin: 30px;
-        width: 200px;
-        padding: 15px;
-        background-color: rgb(206, 153, 153);
-        border: 5px solid red;
-        text-align: center;
+    table,th,td{
+        color: aliceblue;
+        border:3px solid white;
+        background-color: black;
     }
 </style>
 <body>
-   <p>margin: 0px; padding: 0px;여백이 0인 단락입니다.</p>
-   <p id="target">여백이 있는 단락입니다.</p>
-   <p style="text-align: center;">
-    <em>Text</em>
-    </p>
-    <a href="3.html" target="_blank">눌러</a>
+    <table>
+        <thread>
+            <tr>
+                <th>학번</th>
+                <th>이름</th>
+                <th>성적</th>
+                <th>학점</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill</td>
+                <td>98</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve</td>
+                <td>89</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>93</td>
+                <td>A-</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="video.mp4" alt="안 나왔지렁" >
 </body>
 </html>
