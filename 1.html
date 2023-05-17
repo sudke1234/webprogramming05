@@ -7,19 +7,36 @@
     <title>Document</title>
 </head>
 <style>
-    table{
-        border-collapse: collapse;
-        
+    *{
+        margin: 0px;
         
     }
-    table,th,td{
+    tr:nth-child(2n){
+        background-color: rgb(206, 143, 143);
+    }
+    tr:hover{
+        background-color: rgb(0, 0, 0);
         color: aliceblue;
-        border:3px solid white;
-        background-color: black;
     }
+    td,th{
+        border-bottom: 1px solid black;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;   
+    }
+    th{
+        height: 10px;
+        background-color: green;
+        color: aliceblue;
+    }
+
 </style>
 <body>
-    <table>
+     <table>
+        <caption>the rest of my life is link with my grade </caption>
         <thread>
             <tr>
                 <th>학번</th>
@@ -40,6 +57,12 @@
                 <td>Steve</td>
                 <td>89</td>
                 <td>B+</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>93</td>
+                <td>A-</td>
             </tr>
             <tr>
                 <td>3</td>

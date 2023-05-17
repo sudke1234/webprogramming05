@@ -7,27 +7,54 @@
     <title>Document</title>
 </head>
 <style>
-    li{
-        font-size: 50px;
-        font-family: cursive;
-        display: inline;
-        padding: 1%;
+
+    input[type=text]:hover{
+        width: 500px; height: 650px;
+        background-size: 100% 100%;
+        background-image:url(OIP.jpg);
     }
-    ul{
-        text-align: center;
-        list-style: none;
-        border-top: 5px solid red;
-        border-bottom: 5px solid red;
-        padding: 3%;
+   input[type=text]{
+    background-color: pink;
+    border: 2px solid blue;
+    font-weight: bold;
+    
+   }
+   input[type=email]:hover{
+        width: 1200px; height: 650px;
+        background-size: 100% 100%;
+        background-image:url(oi.jpg);
     }
+   
+   input[type=email]{
+    background-color:black;
+    border: 1px solid blue;
+    color: pink;
+    
+   }
+   input[type=placeholder]{
+    background-color: gray;
+   }
+   input{
+    margin: 10px;
+   }
+   
 </style>
 <body>
-    <ul>
-        <li>HOME</li>
-        <li>BLONG</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
-    </ul>
-    
+    <!--집가고 싶당-->
+    <h2>상품 평</h2>
+    <p>받으신 상품을 평가해주세요.</p>
+    <div>
+        <form action="process.jsp">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름"><br>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="이메일"><br>
+            <label for="subject"></label>
+            <textarea id="subject" name="subject" placeholder="상품을 평가해주세요." style="height:100px"></textarea>
+            </form>
+            
+        </form>
+    </div>
 </body>
+
 </html>
