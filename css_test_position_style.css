@@ -1,0 +1,46 @@
+body{
+    width: 1000000;
+}
+.wrap{
+    background-color: violet;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: royalblue;
+    display: flex;
+}
+.container > .item{
+  
+    background-color: orange;
+    border: 3px dashed rgb(214, 185, 185);
+    display:  block;
+}
+.container .item:nth-child(1){
+    width: 100px;
+    height: 100px;
+}
+.container .item:nth-child(2){
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+.container .item:nth-child(3){
+    width: 70px;
+    height: 120px;
+    position: relative;
+    z-index: 1;
+}
+.container .item:nth-child(4){
+    width: 170px;
+    height: 120px;
+    position: relative;
+    top: -100px;
+    z-index: 3;
+}
