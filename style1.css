@@ -1,0 +1,93 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./images/room.jpg);
+}
+.container .header{
+    padding: 10px;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+.container .header .nav ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    justify-content: center;
+    margin: 20px;
+}
+.container .header .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.container .header .nav ul li a:hover{
+    color: darkolivegreen;
+}
+.container .header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.container .header .header_search{
+    margin: 10px 0px;
+    width: 800px;
+    padding: 0px;
+    border: 2px solid darkslategrey;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+}
+.container .header .header_search input{
+    border: none;
+    border-radius: 20px;
+}
+.container .header .header_search button{
+    margin-right: 0px;
+    margin-left: 600px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+}
+.container .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    position: absolute;
+    background-color: rgb(63, 62, 62);
+    width: 100%;
+    height: 110px; /* 내용물에 따라 알맞는 값 설정 */
+    bottom: 0px;
+    position: absolute;
+    opacity: 0.5;
+}
+footer p{
+    padding: 1px;
+    margin: 10px;
+    font-family:'Courier New', Courier, monospace ;
+    color: white;
+}

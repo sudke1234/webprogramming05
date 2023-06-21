@@ -1,47 +1,68 @@
-/* 글꼴 설정 */
- @font-face {
+@font-face {
     font-family: abster;
     src: url(font/abster-webfont.woff) format('woff');
 }
 
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 .container{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/room.jpg);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./images/room.jpg);
 }
+/* font-family:Verdana, Geneva, Tahoma, sans-serif;*/
 .container .header{
+    width: 80%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 .container .header h1 a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
     text-decoration: none;
+    color: white;
+    font-family: abster;
+
 }
-.nav ul li {
+
+.container .header .nav ul li{
     display: inline-block;
     margin: 0px 10px;
 }
-.nav ul li a{
+.container .header .nav ul li a{
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 }
-.nav ul li a:hover{
+.container .header .nav ul li a:hover{
     color: skyblue;
-
 }
 .container .hero{
-    left:50%;
-    right: 50%;
-}
-.hero h2{
-    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
 
+}
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.container .hero p{
+    font-size: 22px;
+}
+.container .hero button{
+    border: 2px solid darkseagreen;
+    background: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: all .4s;
+}
+.container .hero button a{
+    text-decoration: none;
+    color: white;
+    
+}
+.container .hero button:hover{
+    background-color: darkslategray;
 }
