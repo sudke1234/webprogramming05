@@ -1,32 +1,3 @@
-<!--<!DOCTYPE html>
-<body>
-    <h2 id='remaining'></h2>
-    <script>
-        function datesUntilXmas() {
-            let now = new Date();
-            let newYear = new Date('December 25,' + (now.getFullYear()));
-            let diff = newYear - now;
-            let milliseconds = Math.floor(diff % 1000);
-            diff = diff / 1000;
-            let seconds = Math.floor(diff % 60);
-            diff = diff / 60;
-            let minutes = Math.floor(diff % 60);
-            diff = diff / 60;
-            let hours = Math.floor(diff % 24);
-            diff = diff / 24;
-            let days = Math.floor(diff);
-            let outStr = '금년 크리스마스까지 ' + days + '일, ' + hours + '시간, ' 
-				+ minutes;
-            outStr += '분, ' + seconds + '초' + ' 남았습니다.';
-            document.getElementById('remaining').innerHTML = outStr;
-             setTimeout("datesUntilXmas()", 1000);
-        }             
- // 타이머를 시작한다. 
- //함수 실행 코드 작성부분
-    </script>
-</body>
-</html>
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="TEST.css">
 </head>
 <body>
+    <div class="header">
+        <div class="start">
+            <div class="start_logo">
+                <img src="./logo.png" alt="none-picture" id="icon_logo">
+                <img src="./youtube_logo.png" alt="none-picture" id="youtube_logo">
+            </div>
+            
+        </div>
+        <div class="center">
+            <input type="text">
+        </div>
+        <div class="end">
 
-         <h2 id='clock'></h2>
-     <script>
-        function setClock() {
-         let now = new Date();
-         let s = now.getHours + ':' + now.getMinutes() + ':' + now.getSeconds();
-	    //출력부분 document.....
-        document.getElementById('clock').innerHTML = s;
+        </div>
+    </div>
+    <div class="main">
 
+    </div>
+    <div class="footer">
 
-         setTimeout('setClock()', 1000);
-        }
-         setClock();
-         </script>
-
- 
-     
-
+    </div>
 </body>
 </html>

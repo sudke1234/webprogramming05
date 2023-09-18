@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .start .start_logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+.header .start .start_logo #icon_logo{
+    width: 35px;
+    height: 40px;
+    margin: 10px;
+}
+.header .start .start_logo #youtube_logo{
+    width: 60px;
+    margin: 10px;
+}
