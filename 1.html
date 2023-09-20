@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="TEST.css">
-</head>
+<html>       
 <body>
-    <div class="header">
-        <div class="start">
-            <div class="start_logo">
-                <img src="./logo.png" alt="none-picture" id="icon_logo">
-                <img src="./youtube_logo.png" alt="none-picture" id="youtube_logo">
-            </div>
+    
+    <h1>학번_이름</h1>
+    <h1 id="test">This is a heading.</h1>
+    
+    <script>
+        function a() {
             
-        </div>
-        <div class="center">
-            <input type="text">
-        </div>
-        <div class="end">
-
-        </div>
-    </div>
-    <div class="main">
-
-    </div>
-    <div class="footer">
-
-    </div>
+            b= document.getElementById("test");
+            b.style.color = "blue";
+    
+        }
+    </script>
+    
+    <button type="button" onclick="a()">클릭하세요!</button>
 </body>
 </html>

@@ -1,60 +1,30 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-
-    input[type=text]:hover{
-        width: 500px; height: 650px;
-        background-size: 100% 100%;
-        background-image:url(OIP.jpg);
-    }
-   input[type=text]{
-    background-color: pink;
-    border: 2px solid blue;
-    font-weight: bold;
-    
-   }
-   input[type=email]:hover{
-        width: 1200px; height: 650px;
-        background-size: 100% 100%;
-        background-image:url(oi.jpg);
-    }
-   
-   input[type=email]{
-    background-color:black;
-    border: 1px solid blue;
-    color: pink;
-    
-   }
-   input[type=placeholder]{
-    background-color: gray;
-   }
-   input{
-    margin: 10px;
-   }
-   
-</style>
 <body>
-    <!--집가고 싶당-->
-    <h2>상품 평</h2>
-    <p>받으신 상품을 평가해주세요.</p>
-    <div>
-        <form action="process.jsp">
-            <label for="name">이름</label>
-            <input type="text" id="name" name="name" placeholder="이름"><br>
-            <label for="email">이메일</label>
-            <input type="email" id="email" name="email" placeholder="이메일"><br>
-            <label for="subject"></label>
-            <textarea id="subject" name="subject" placeholder="상품을 평가해주세요." style="height:100px"></textarea>
-            </form>
-            
-        </form>
-    </div>
-</body>
+    <h1>학번_이름</h1>
+    <script>
 
+        document.write("<h1>구구단표</h1>");
+        document.write("<table border=2 width=50%");
+        
+        for(let i= 1; i<= 9; i++) {
+            document.write("<tr>");
+            document.write("<td>"+i+"</td>");    
+            for(let j=2; j<= 9; j++){
+                document.write("<td>"+i*j+"</td>");
+            }
+            document.write("</tr>");
+        }
+       
+
+
+
+</script>
+</body>
 </html>

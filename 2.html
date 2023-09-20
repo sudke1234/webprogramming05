@@ -1,29 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<html><head>
+    <title>Calculator</title>
+    <script>
+        function calc(){
+            let x = document.getElementById("x").value;
+            let y = document.getElementById("y").value;
+            let sum = parseInt(x)+parseInt(y);
+            document.getElementById("sum").value = sum;
+        }
+
+    </script>
 </head>
 <body>
-    <h1 id="test1">1</h1>
-    <h1 id="test2">2</h1>
-    <script>
-        let time = new Date().getHours();
-        let msg;
-        document.getElementById("test1").innerHTML = "time=" +time;
-        if( time < 12 ){
+    <h1>학번_이름</h1>
+    <h3>덧셈 계산기</h3>
+    <form name="myform" action="..." method="POST">
+        첫번째 정수:         <input id="x"/><br/>
+        두번째 정수:         <input id="y"/><br/>
+        합계:          <input id="sum"/><br/>
 
-            msg = "Good Morning";
-        }
-        else if(time < 18){
-            msg = "New afternoon";
-        }
-        else{
-            msg = "Good night";
-        }
-        document.getElementById("test2").innerHTML =msg;
-    </script>
-</body>
-</html>
+    </form>
+</body></html>
