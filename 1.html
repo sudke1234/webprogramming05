@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html>       
-<body>
-    
-    <h1>학번_이름</h1>
-    <h1 id="test">This is a heading.</h1>
-    
+<html lang="ko">
+<head>
+     <style>
+     .button {
+        padding: 10px;
+    width: 50px;
+     height: 50px;
+     }
+    </style>
     <script>
-        function a() {
-            
-            b= document.getElementById("test");
-            b.style.color = "blue";
-    
-        }
-    </script>
-    
-    <button type="button" onclick="a()">클릭하세요!</button>
+     function add() {
+     let number1, number2;
+     number1 = parseFloat(document.getElementById("number1").value);
+     number2 = parseFloat(document.getElementById("number2").value);
+     document.getElementById("result").value = number1 + number2;
+       }
+       function add1() {
+     let number1, number2;
+     number1 = parseFloat(document.getElementById("number1").value);
+     number2 = parseFloat(document.getElementById("number2").value);
+     document.getElementById("result").value = number1 - number2;
+       }
+       function add2() {
+     let number1, number2;
+     number1 = parseFloat(document.getElementById("number1").value);
+     number2 = parseFloat(document.getElementById("number2").value);
+     document.getElementById("result").value = number1 * number2;
+       }
+       function add3() {
+     let number1, number2;
+     number1 = parseFloat(document.getElementById("number1").value);
+     number2 = parseFloat(document.getElementById("number2").value);
+     document.getElementById("result").value = number1 / number2;
+       }
+     </script>
+<body>
+     숫자 1: <input type=text id="number1" value="9"><br>
+     숫자 2: <input type=text id="number2" value="6"><br>
+     <input type=button value="+" onClick="add()" class="button">
+     <input type=button value="-" onClick="add1()" class="button">
+     <input type=button value="*" onClick="add2()" class="button">
+     <input type=button value="/" onClick="add3()" class="button"><br>
+     연산결과: <input type=text id="result" value="">
 </body>
 </html>
