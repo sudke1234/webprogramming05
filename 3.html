@@ -1,30 +1,53 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="ko">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>학번_이름</h1>
-    <script>
-
-        document.write("<h1>구구단표</h1>");
-        document.write("<table border=2 width=50%");
-        
-        for(let i= 1; i<= 9; i++) {
-            document.write("<tr>");
-            document.write("<td>"+i+"</td>");    
-            for(let j=2; j<= 9; j++){
-                document.write("<td>"+i*j+"</td>");
-            }
-            document.write("</tr>");
+    <style>
+        table,
+        td {
+            border: 1px solid black;
         }
-       
+    </style>
+  
+</head>
 
+<body>
 
+    <table id="special">
+        <tr>
+            <td>(1, 1) 셀</td>
+            <td>(1, 2) 셀</td>
+        </tr>
+        <tr>
+            <td>(2, 1) 셀</td>
+            <td>(2, 2) 셀</td>
+        </tr>
+    </table>
+    <br>
 
-</script>
+    <button onclick="insert()">행 추가</button>
+
+    <script>
+        function insert() {
+            
+  const table = document.getElementById('special');
+  
+
+  const newRow = table.insertRow();
+  
+  
+  const newCell1 = newRow.insertCell(0);
+  const newCell2 = newRow.insertCell(1);
+  
+  
+  newCell1.innerText = '새로운 셀(0,1)';
+  newCell2.innerText = '(1,2)';
+        }
+    </script>
+
 </body>
 </html>
