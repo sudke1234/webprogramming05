@@ -1,53 +1,31 @@
-
-
-
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        table,
-        td {
-            border: 1px solid black;
+        p,
+        div {
+            margin: 10px;
+            border: 1px solid rgb(199, 89, 25);
         }
     </style>
-  
 </head>
 
 <body>
-
-    <table id="special">
-        <tr>
-            <td>(1, 1) 셀</td>
-            <td>(1, 2) 셀</td>
-        </tr>
-        <tr>
-            <td>(2, 1) 셀</td>
-            <td>(2, 2) 셀</td>
-        </tr>
-    </table>
-    <br>
-
-    <button onclick="insert()">행 추가</button>
-
+    <div id="div1">DIV
+        <p id="p1">P</p>
+    </div>
     <script>
-        function insert() {
-            
-  const table = document.getElementById('special');
-  
-
-  const newRow = table.insertRow();
-  
-  
-  const newCell1 = newRow.insertCell(0);
-  const newCell2 = newRow.insertCell(1);
-  
-  
-  newCell1.innerText = '새로운 셀(0,1)';
-  newCell2.innerText = '(1,2)';
-        }
+        let elem1 = document.getElementById("div1");
+        elem1.addEventListener("click", function () { alert(`캡처링 div`); }, true);
+        elem1.addEventListener("click", function () { alert(`버블링 div`); });
+        elem2 = document.getElementById("p1");
+        elem2.addEventListener("click", function () { alert(`캡처링 p`); }, true);
+        elem2.addEventListener("click", function () { alert(`버블링 p`); });
     </script>
-
 </body>
+
 </html>

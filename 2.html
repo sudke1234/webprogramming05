@@ -1,73 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
-    <style>
-        * {
-            text-align: center;
-        }
-
-        #board {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #board tr td {
-            border: 1px solid white;
-            background: #34da79;
-            width: 16px;
-            height: 16px;
-            text-align: center;
-        }
-
-        #board tr td.clicked {
-            background: #6c5ee7;
-        }
-
-        #board tr td.mine {
-            background: #FF0000;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>지뢰찾기</h1>
-    <table id=board>
-    </table>
-    <BUTTON onclick="genGrid();">새로운 게임</BUTTON>
+    <div id="special" style="background-color:#faea11; width:200px; height:50px;">
+        마우스를 올려주세요!</div>
     <script>
-        let grid = document.getElementById("board");
-        genGrid();
-
-        function genGrid() {
-            grid.innerHTML = "";
-            document.getElementById("board");
-            for (let i = 0; i < 8; i++) {
-                document.getElementById("board");
-                row = grid.insertRow(i);
-                for (var j = 0; j < 8; j++) {
-                    cell = row.inserCell(j);
-                    cell.onclick = function(){clickBox(this);};
-                    var mine = document.createAttribute("mine");
-                    if (Math.random() < 0.3)
-                        mine.value = "true";
-                    else
-                        mine.value = "false";
-                }
-                
-                document.write("</tr></td>");
-                cell.setAttributeNode(mine);
-            }
-        }
-
-        function clickBox(cell) {
-            if (cell.getAttribute("mine") == "true") {
-                cell.className = "mine";
-                alert("게임이 종료되었습니다.");
-            } else {
-                cell.className = "clicked";
-            }
-        }
+        let obj = document.getElementById("special");
+        obj.onmouseover = function (e) {
+            x = e.clientX;
+            y = e.clientY;//위로 버블링 아래로 캠처링.true면 캡처링임.false버블링
+            alert(x + " " + y);
+            alert(e.type);
+            alert(e.target);
+        };
     </script>
 </body>
 
