@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            let answer = document.getElementById("answer").value;
+            let s = document.getElementById("problem").value;
+            let solution = eval(s);
+            
+
+            if(answer == solution){
+                alert("정답");
+            }
+            else{
+                alert("틀림. 정답 ="+solution);
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <h3>Math Quiz</h3>
+    <input type="text" id="problem" value="10*10*10"><br>
+    <input type="text" id="answer" >
+    <button onclick="cal()">답 알아보기</button>
+    
+    
+
+</body>
+</html>

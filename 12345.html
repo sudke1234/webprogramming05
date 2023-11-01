@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="summer.jpg" onmousemove="sub(event)" alt=""><br>
+    <p id="test"></p>
+    <script>
+        function sub(e){
+            let x = e.clientX;
+            let y =  e.clientY;
+            let coor = "좌표:("+x+","+y+")";
+            document.getElementById("test").innerHTML = coor;
+        }
+    </script>
+</body>
+</html>
