@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function removeNode(){
-            let parent = document.getElementById("target");
-            let child = document.getElementById("p2");
-            parent.removeChild(child);
+        function checkLength(elem, min, max) {
+            let s = elem.value;
+            if (s.length >= min && s.length <= max) {
+                return true;
+            } else {
+                alert(min + " 문자와 " + max + " 문자 사이로 입력해주세요!");
+                elem.focus();
+                return false;
+            }
         }
     </script>
+    <form>
+        이름(6-8 문자): <input type='text' id='name' />
+        <input type='button'
+            onclick="checkLength(document.getElementById('name'), 6, 8)"
+            value='확인' />
+    </form>
 </head>
 <body>
-    <div id="target">
-        <p id="p1">첫번째 단락</p>
-        <p id="p2">두번째 단락</p>
-    </div>
-    <button onclick="removeNode()">누르세요!</button>
+    
 </body>
 </html>
